@@ -9,10 +9,10 @@ export default function HeaderTop() {
     { name: "Italian", value: "it" },
   ];
   const socialIcons = [
-    { name: "Facebook", iconClass: "lab la-facebook-f" },
+    { name: "Facebook", iconClass: "lab la-facebook-f", url: "" },
     { name: "Twitter", iconClass: "lab la-twitter" },
     { name: "LinkedIn", iconClass: "lab la-linkedin-in" },
-    { name: "Instagram", iconClass: "lab la-instagram" },
+    { name: "Instagram", iconClass: "lab la-instagram", url: "https://www.instagram.com/imidzh.kz?igsh=MW9sbmswaTJ0cHNzdA==" },
   ];
   const [activeIcon, setActiveIcon] = useState(null);
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0].name);
@@ -30,11 +30,11 @@ export default function HeaderTop() {
               <div className="d-none d-md-flex align-items-center">
                 <small className="mr-3">
                   <i className="las la-store text-primary mr-1 align-middle"></i>
-                  Welcome to Our store Ekocart
+                  ИМИДЖ.KZ
                 </small>{" "}
                 <small>
                   <i className="las la-truck text-primary mr-1 align-middle"></i>
-                  Free shipping worldwide
+                  Бесплатная доставка по Казахстану*
                 </small>
               </div>
               <div className="d-flex align-items-center">
@@ -71,9 +71,9 @@ export default function HeaderTop() {
                         onMouseEnter={() => setActiveIcon(icon.name)}
                         onMouseLeave={() => setActiveIcon(null)}
                       >
-                        <Link className="text-muted" to="#">
+                        <a className="text-muted" href={icon.url ? icon.url : ""} target="_blank" rel="noreferrer">
                           <i className={icon.iconClass}></i>
-                        </Link>
+                        </a>
                       </li>
                     ))}
                   </ul>

@@ -1,12 +1,12 @@
-import React from 'react';
-import { Col, Container, Row } from 'reactstrap';
-import { useSelector } from 'react-redux';
-import AboutUsTestimonial from '../Components/AboutUsTestimonial';
-import BlogSection from '../Components/Blog/BlogSection';
-import InstagramSection from '../Components/InstagramSection/InstagramSection';
-import LogoSection from '../Components/LogoSection/LogoSection';
-import NewsletterSection from '../Components/News/NewsLetterSection';
-import PageHeading from '../Components/PageHeading/PageHeading';
+import React from "react";
+import { Col, Container, Row } from "reactstrap";
+import { useSelector } from "react-redux";
+import AboutUsTestimonial from "../Components/AboutUsTestimonial";
+import BlogSection from "../Components/Blog/BlogSection";
+import InstagramSection from "../Components/InstagramSection/InstagramSection";
+import LogoSection from "../Components/LogoSection/LogoSection";
+import NewsletterSection from "../Components/News/NewsLetterSection";
+import PageHeading from "../Components/PageHeading/PageHeading";
 
 function AboutUs() {
     const firstBreadcrumb = { label: "Pages" };
@@ -24,86 +24,132 @@ function AboutUs() {
         "assets/images/client/07.png",
         "assets/images/client/08.png",
     ];
-    const blogs = useSelector(
-        (state) => state.blog.blogItems
-    );
-    const filteredBlogs = blogs.filter(
-        (blog) => blog.category.includes("Cloth") || blog.category.includes("Fashion")
-    ).slice(0, 3);
+    const blogs = useSelector((state) => state.blog.blogItems);
+    const filteredBlogs = blogs
+        .filter(
+            (blog) =>
+                blog.category.includes("Cloth") ||
+                blog.category.includes("Fashion"),
+        )
+        .slice(0, 3);
     const reasonsData = [
         {
             icon: <i className="las la-credit-card ic-3x text-primary"></i>,
-            title: 'Credit Card',
-            description: 'Serspiciatis unde omnis iste natus error sit.',
+            title: "Широкий ассортимент",
+            description: "Мы имеем более 10 000 наименований товаров на наших складах",
         },
         {
             icon: <i className="las la-shipping-fast ic-3x text-primary"></i>,
-            title: 'Free Shipping',
-            description: 'Serspiciatis unde omnis iste natus error sit.',
+            title: "Индивидуальный подход",
+            description: "Мы долгое время работали в розничных продажах, поэтому знаем, как важно удовлетворить потребности каждого клиента",
         },
         {
             icon: <i className="las la-history ic-3x text-primary"></i>,
-            title: '24/7 Support',
-            description: 'Serspiciatis unde omnis iste natus error sit.',
+            title: "Собственный showroom",
+            description: "Мы предлагаем нашим клиентам посетить наш шоурум, чтобы увидеть и потрогать наши продукты вживую",
         },
         {
             icon: <i className="las la-undo-alt ic-3x text-primary"></i>,
-            title: '30 Days Returns',
-            description: 'Serspiciatis unde omnis iste natus error sit.',
+            title: "Прямые поставки",
+            description: "Мы имеем прямые поставки от производителей, что позволяет нам предлагать лучшие цены на рынке",
         },
     ];
     return (
-        <div className='page-wrapper'>
+        <div className="page-wrapper">
             <PageHeading
                 title="About Us"
                 firstBreadcrumb={firstBreadcrumb}
                 secondBreadcrumb={secondBreadcrumb}
             />
-            <div className='page-content'>
+            <div className="page-content">
                 <section className="p-0">
                     <Container>
                         <div className="row align-items-center justify-content-between">
                             <Col lg="7" mb="6" mbLg="0">
                                 <Row className="align-items-center">
                                     <Col md="6">
-                                        <img src="assets/images/about/01.jpg" className="img-fluid rounded shadow" alt="..." />
+                                        <img
+                                            src="assets/images/about/01.jpg"
+                                            className="img-fluid rounded shadow"
+                                            alt="..."
+                                        />
                                     </Col>
                                     <Col md="6">
-                                        <img src="assets/images/about/02.jpg" className="img-fluid rounded shadow mb-5" alt="..." />
-                                        <img src="assets/images/about/03.jpg" className="img-fluid rounded shadow" alt="..." />
+                                        <img
+                                            src="assets/images/about/02.jpg"
+                                            className="img-fluid rounded shadow mb-5"
+                                            alt="..."
+                                        />
+                                        <img
+                                            src="assets/images/about/03.jpg"
+                                            className="img-fluid rounded shadow"
+                                            alt="..."
+                                        />
                                     </Col>
                                 </Row>
                             </Col>
                             <Col lg="5">
                                 <div>
-                                    <h6 className="text-primary mb-1">— About Us</h6>
-                                    <h2 className="mt-3 font-w-5">We Have New Talents Experience</h2>
-                                    <p className="lead">We use the latest technologies it voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                                    <p className="mb-0">We use the latest technologies it voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                                    <h6 className="text-primary mb-1">
+                                        — О компании
+                                    </h6>
+                                    <h2 className="mt-3 font-w-5">
+                                        Правильное решение для позиционирования
+                                        любой компании
+                                    </h2>
+                                    <p className="lead">
+                                        имиджевая сувенирная продукция - это
+                                        лицо успешного бизнеса
+                                    </p>
+                                    <p className="mb-0">
+                                        Маленькие вещи создают большие моменты.
+                                        Даже незначительный корпоративный
+                                        презент уже может увеличить лояльность и
+                                        интерес к компании
+                                    </p>
                                 </div>
                             </Col>
                         </div>
                         <Row className="mt-8">
                             <Col lg="4" md="4">
                                 <h5>
-                                    <span className="text-primary font-w-7">01.</span> Our Mission
-                                </h5>
-                                <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model infancy.</p>
-                            </Col>
-                            <Col lg="4" md="4">
-                                <h5>
-                                    <span className="text-primary font-w-7">02.</span> Our Vision
+                                    <span className="text-primary font-w-7">
+                                        01.
+                                    </span>{" "}
+                                    Наша миссия
                                 </h5>
                                 <p>
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia Neque porro est.
+                                    Имиджевая продукция направлена на улучшение
+                                    корпоративной идентичности компании, а также
+                                    на укрепление ее позиций на рынке
                                 </p>
                             </Col>
                             <Col lg="4" md="4">
                                 <h5>
-                                    <span className="text-primary font-w-7">03.</span> Our Value
+                                    <span className="text-primary font-w-7">
+                                        02.
+                                    </span>{" "}
+                                    Наше видение
                                 </h5>
                                 <p>
-                                    Officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et non recusandae.
+                                    Мы считаем, что имиджевая продукция - это не
+                                    просто сувенир, а важный инструмент для
+                                    продвижения бренда и укрепления связей с
+                                    клиентами
+                                </p>
+                            </Col>
+                            <Col lg="4" md="4">
+                                <h5>
+                                    <span className="text-primary font-w-7">
+                                        03.
+                                    </span>{" "}
+                                    Наши ценности
+                                </h5>
+                                <p>
+                                    Мы ценим творческий подход и
+                                    индивидуальность каждого заказа. Мы верим,
+                                    что уважение к нашим партнерам и клиентам
+                                    является основой успешных отношений
                                 </p>
                             </Col>
                         </Row>
@@ -114,13 +160,23 @@ function AboutUs() {
                         <Row className="align-items-end mb-5">
                             <Col lg="6">
                                 <div>
-                                    <h6 className="text-primary mb-1">— Why Choose Us</h6>
-                                    <h2 className="mb-0">We Are Known For Our Abilities Markets.</h2>
+                                    <h6 className="text-primary mb-1">
+                                        — Почему мы?
+                                    </h6>
+                                    <h2 className="mb-0">
+                                        Отличительные преимущества нашей
+                                        компании
+                                    </h2>
                                 </div>
                             </Col>
                             <Col lg="6">
                                 <div>
-                                    <p className="lead mb-0">All types of businesses need access to development resources, so we give you the option to decide how much you need to use.</p>
+                                    <p className="lead mb-0">
+                                        В мире, где каждая деталь имеет
+                                        значение, ИМИДЖ.KZ выделяется своим
+                                        уникальным подходом к созданию
+                                        сувенирной продукции
+                                    </p>
                                 </div>
                             </Col>
                         </Row>
@@ -129,8 +185,12 @@ function AboutUs() {
                                 <Col lg="3" md="6" key={index}>
                                     <div className="px-4 py-7 rounded text-center border">
                                         {reason.icon}
-                                        <h5 className="mt-2 mb-1">{reason.title}</h5>
-                                        <p className="mb-0">{reason.description}</p>
+                                        <h5 className="mt-2 mb-1">
+                                            {reason.title}
+                                        </h5>
+                                        <p className="mb-0">
+                                            {reason.description}
+                                        </p>
                                     </div>
                                 </Col>
                             ))}
@@ -144,7 +204,7 @@ function AboutUs() {
                 <InstagramSection />
             </div>
         </div>
-    )
+    );
 }
 
-export default AboutUs
+export default AboutUs;

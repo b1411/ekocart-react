@@ -15,23 +15,23 @@ export default function Index() {
   const feature = [
     {
       icon: "las la-truck ic-2x text-primary",
-      title: "Free Shipping",
-      description: "Writing result-oriented",
+      title: "Бесплатная доставка",
+      description: "Для корпоративных клиентов",
     },
     {
       icon: "las la-hand-holding-usd ic-2x text-primary",
-      title: "Money Return",
-      description: "Writing result-oriented",
+      title: "Скорость",
+      description: "Выполним заказ не позднее 14 рабочих дней",
     },
     {
       icon: "las la-lock ic-2x text-primary",
-      title: "Secure Payment",
-      description: "Writing result-oriented",
+      title: "Качество",
+      description: "Даем качество, за которое несем ответственность",
     },
     {
       icon: "las la-headset ic-2x text-primary",
-      title: "24/7 Support",
-      description: "Writing result-oriented",
+      title: "Низкие цены",
+      description: "Корпоративные скидки для наших клиентов",
     },
   ];
 

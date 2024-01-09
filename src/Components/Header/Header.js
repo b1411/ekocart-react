@@ -10,10 +10,10 @@ export default function Header() {
         <HeaderTop />
         <HeaderMiddle
           options={[
-            { value: "all", label: "All Categories" },
-            { value: "men", label: "Men" },
-            { value: "women", label: "Women" },
-            { value: "kids", label: "Kids" },
+            { value: "all", label: "Все категории" },
+            { value: "men", label: "Мужская" },
+            { value: "women", label: "Женская" },
+            { value: "kids", label: "Детская" },
           ]}
         />
         <HeaderNavBar />

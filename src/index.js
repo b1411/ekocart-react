@@ -26,7 +26,7 @@ const store = configureStore({
 // Create the persisted store
 const persistor = persistStore(store);
 
-const root = ReactDOM.hydrateRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>

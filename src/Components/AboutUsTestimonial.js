@@ -10,7 +10,7 @@ function AboutUsTestimonial() {
         {
             id: 1,
             imgSrc: "assets/images/thumbnail/01.jpg",
-            name: "Ember Lana",
+            name: "",
             role: "Founder",
             description:
                 "Ekocart Amazing E-commerce Template, clean code, Crative & Modern design.",
