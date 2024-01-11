@@ -16,17 +16,77 @@ const Banner = () => {
 
     const slides = [
         {
-            bgImg: "assets/images/bg/01.jpg",
+            bgImg: "assets/images/bg/01.png",
             title: "Магазин сувенирной продукции",
             subtitle: "IMIDZH.KZ",
             button: "Shop Now",
         },
         {
-            bgImg: "assets/images/bg/02.jpg",
+            bgImg: "assets/images/bg/02.png",
             title: "Самая популярная продуцкия на рынке",
             subtitle: "Лидеры продаж",
             button: "View Collection",
         },
+        {
+            bgImg: "assets/images/bg/03.png",
+            title: "Сувенирная продукция",
+            subtitle: "IMIDZH.KZ",
+            button: "Shop Now",
+        },
+        {
+            bgImg: "assets/images/bg/04.png",
+            title: "Сувенирная продукция",
+            subtitle: "IMIDZH.KZ",
+            button: "Shop Now",
+        },
+        {
+            bgImg: "assets/images/bg/people_01.png",
+            title: "Сувенирная продукция",
+            subtitle: "IMIDZH.KZ",
+            button: "Shop Now",
+        },
+        {
+            bgImg: "assets/images/bg/people_02.png",
+            title: "Сувенирная продукция",
+            subtitle: "IMIDZH.KZ",
+            button: "Shop Now",
+        },
+        {
+            bgImg: "assets/images/bg/people_03.png",
+            title: "Сувенирная продукция",
+            subtitle: "IMIDZH.KZ",
+            button: "Shop Now",
+        },
+        {
+            bgImg: "assets/images/bg/people_04.png",
+            title: "Сувенирная продукция",
+            subtitle: "IMIDZH.KZ",
+            button: "Shop Now",
+        },
+        {
+            bgImg: "assets/images/bg/people_05.png",
+            title: "Сувенирная продукция",
+            subtitle: "IMIDZH.KZ",
+            button: "Shop Now",
+        },
+        {
+            bgImg: "assets/images/bg/people_06.png",
+            title: "Сувенирная продукция",
+            subtitle: "IMIDZH.KZ",
+            button: "Shop Now",
+        },
+        {
+            bgImg: "assets/images/bg/people_07.png",
+            title: "Сувенирная продукция",
+            subtitle: "IMIDZH.KZ",
+            button: "Shop Now",
+        },
+        {
+            bgImg: "assets/images/bg/people_08.png",
+            title: "Сувенирная продукция",
+            subtitle: "IMIDZH.KZ",
+            button: "Shop Now",
+        }
     ];
 
     return (
