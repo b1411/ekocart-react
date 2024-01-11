@@ -40,6 +40,24 @@ const Banner = () => {
             button: "Shop Now",
         },
         {
+            bgImg: "assets/images/bg/05.png",
+            title: "Сувенирная продукция",
+            subtitle: "IMIDZH.KZ",
+            button: "Shop Now",
+        },
+        {
+            bgImg: "assets/images/bg/06.png",
+            title: "Сувенирная продукция",
+            subtitle: "IMIDZH.KZ",
+            button: "Shop Now",
+        },
+        {
+            bgImg: "assets/images/bg/07_1.png",
+            title: "Сувенирная продукция",
+            subtitle: "IMIDZH.KZ",
+            button: "Shop Now",
+        },
+        {
             bgImg: "assets/images/bg/people_01.png",
             title: "Сувенирная продукция",
             subtitle: "IMIDZH.KZ",
